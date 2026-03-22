@@ -9,12 +9,22 @@ canvas {
   touch-action: none;
 }
 .controls {
-  margin: 10px auto;
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  margin: 12px auto;
+  display: grid;
+  grid-template-columns: 70px 70px 70px;
+  grid-template-rows: 70px 70px;
   gap: 8px;
+  justify-content: center;
+  align-items: center;
 }
+.controls > div {
+  width: 70px;
+  height: 70px;
+}
+.controls > #leftBtn { grid-column: 1; grid-row: 2; }
+.controls > #downBtn { grid-column: 2; grid-row: 2; }
+.controls > #rightBtn { grid-column: 3; grid-row: 2; }
+.controls > #upBtn { grid-column: 2; grid-row: 1; }
 .control {
   width: 56px;
   height: 56px;

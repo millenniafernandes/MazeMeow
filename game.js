@@ -302,7 +302,7 @@ function draw() {
     drawTrainY = offsetY + train.row * gridSize;
   }
 
-  ctx.fillText("🚆", drawTrainX + 6, drawTrainY + 30);
+  ctx.fillText("🚃", drawTrainX + 6, drawTrainY + 30);
   ctx.fillText("🏢", office.col * gridSize + 6, offsetY + office.row * gridSize + 30);
 }
 
